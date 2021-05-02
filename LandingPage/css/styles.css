@@ -155,4 +155,17 @@ section h1 {
   clear: both;
 }
 
+#projects li {
+  float: left;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  width: 13.3333333333%;
+}
+#projects li:nth-child(6n) {
+  margin-right: 0;
+}
+#projects li img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */

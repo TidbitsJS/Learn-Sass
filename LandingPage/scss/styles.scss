@@ -21,7 +21,7 @@
     display: block;
     text-align: center;
     &:hover {
-      background: #000;
+      background: lighten($deepBlue, 7);
     }
   }
 }
@@ -67,7 +67,7 @@ section h1 {
     font-weight: bold;
 
     &:hover {
-      color: red;
+      color: complement($deepBlue);
     }
   }
 

@@ -55,7 +55,7 @@ li {
 }
 #main-nav li {
   float: left;
-  width: 14%;
+  width: 15.3846153846%;
 }
 #main-nav a {
   color: #f8f9fb;
@@ -126,6 +126,33 @@ section h1 {
   font-size: 20px;
   max-width: 500px;
   margin: 60px 0;
+}
+
+#services {
+  margin-bottom: 60px;
+}
+#services li {
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  width: 33.3333333333%;
+}
+#services img {
+  width: 60%;
+  margin: 20px 20%;
+}
+#services a {
+  text-decoration: none;
+  color: #032f3a;
+  font-weight: bold;
+}
+#services a:hover {
+  color: red;
+}
+#services ul::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /*# sourceMappingURL=styles.css.map */

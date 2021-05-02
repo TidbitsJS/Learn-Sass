@@ -11,7 +11,7 @@
 
   li {
     float: left;
-    width: 14%;
+    width: (100% / 6.5);
   }
 
   a {
@@ -44,5 +44,34 @@ section h1 {
     font-size: 20px;
     max-width: 500px;
     margin: 60px 0;
+  }
+}
+
+#services {
+  margin-bottom: 60px;
+  li {
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    width: (100% / 3);
+  }
+
+  img {
+    width: 60%;
+    margin: 20px 20%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $deepBlue;
+    font-weight: bold;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  ul {
+    @include clearFix;
   }
 }

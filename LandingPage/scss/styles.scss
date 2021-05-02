@@ -12,6 +12,9 @@
   li {
     float: left;
     width: (100% / 6.5);
+    @include mediaQuery(600px) {
+      width: 100%;
+    }
   }
 
   a {

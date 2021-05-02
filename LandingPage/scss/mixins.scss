@@ -18,6 +18,10 @@
     display: block;
     text-transform: uppercase;
     font-weight: bold;
+
+    @include mediaQuery(3000px, 1200px) {
+      font-size: 68px;
+    }
   }
 
   span.title {
@@ -41,5 +45,19 @@
   width: ((100% - (($cols - 1) * $mgn)) / $cols);
   &:nth-child(#{$cols}n) {
     margin-right: 0;
+  }
+}
+
+@mixin mediaQuery($args...) {
+  @if length($args) == 1 {
+    @media screen and (max-width: nth($args, 1)) {
+      @content;
+    }
+  }
+
+  @if length($args) == 2 {
+    @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)) {
+      @content;
+    }
   }
 }
